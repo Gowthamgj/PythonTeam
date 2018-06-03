@@ -1,15 +1,32 @@
 body{
     background-image: url("../images/shore.jpg");
     background-size: 100% 100%;
+    
 }
+/* .row{
+    height: 100%;
+} */
+.set{
+    /* width: 20%; */
+    height: 100%;
+    /* background-color: red; */
+    /* position: absolute; */
+}
+/* .set2{
+    height: 100%;
+    background-color: red;
+} */
 .container-fluid{
     /* background-color: wheat; */
     height: 100vh;
 }
-#maincontent{
+/* #maincontent{
     position: fixed;
     height: 50vh;
-    margin-top: 150px;
+    margin-top: 50px;
+} */
+#maincontent{
+    margin-top: 100px;
 }
 .items{
     width: 100px;
@@ -17,9 +34,107 @@ body{
     border: solid 2px black;
 }
 h2{
-    margin-left: -130px;
-    margin-top: -52px;
+    /* margin-left: -130px;
+    margin-top: -52px; */
+    
+    text-align: center;
     font-family: 'Pacifico', cursive;
     font-size: 34px;
     /* color:red; */
+}
+.set #flow{
+    position: absolute;
+    display: block;
+}
+.set #flow:nth-child(1){
+    left:00px;
+    top:0;
+    animation: animating 15s linear infinite;
+}
+.set #flow:nth-child(2){
+    left:100px;
+    top:0;
+    animation: animating 15s linear infinite;
+}
+.set #flow:nth-child(3){
+    left:200px;
+    top:0;
+    animation: animating 2s linear infinite;
+}
+.set #flow:nth-child(4){
+    left:250px;
+    
+    animation: flowdown 15s linear infinite;
+}
+.set #flow:nth-child(5){
+    left:40px;
+    animation: flowdown 15s linear infinite;
+}
+.set #flow:nth-child(6){
+    left:10%;
+    animation: cracker 2s linear infinite;
+}
+.set #flow:nth-child(7){
+    left:0px;
+    
+    animation: animating 15s linear infinite;
+}
+.set #flow:nth-child(8){
+    left:100px;
+     
+    animation: animating 15s linear infinite;
+}
+.set #flow:nth-child(9){
+    left:20%;
+    animation: cracker 2s linear infinite;
+}
+.set #flow:nth-child(10){
+    right:10%;
+    animation: animating 15s linear infinite;
+}
+.set #flow:nth-child(11){
+right:00px;
+    animation: animating 15s linear infinite;
+}
+.set #flow:nth-child(12){
+    right:20%;
+
+        animation: animating 15s linear infinite;
+    }
+    .set #flow:nth-child(13){
+        left:70%;
+        top:0px;
+            animation: cracker 2s linear infinite;
+        }
+        .set #flow:nth-child(14){
+            left:80%;
+            top:0px;
+                animation: cracker 2s linear infinite;
+            }
+@keyframes animating{
+    0%{
+        bottom:0%;
+    }
+    
+    100%{
+        bottom:60%
+    }
+}
+@keyframes cracker {
+     0%{
+       top: 0%;
+    }
+     100%{
+         top:0;
+        transform: scale(2);
+    } 
+    
+}
+@keyframes flowdown {
+    0%{
+        top:0%;
+    }
+    100%{
+        top:60%;
+    }
 }

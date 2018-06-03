@@ -15,47 +15,49 @@
   <script src="js/tic.js"></script>
 </head>
 
-<body>
+<body class="set" id="ch">
   <!-- <bgsound src ="beat.mp3"></bgsound> -->
-  <embed src="beat.mp3" autostart="true" loop="true"
+  <embed src="beat.mp3" id="before" autostart="true" loop="true"
   width="2" height="0">
 </embed>
-  <div class="container-fluid">
+
+  <div class="container-fluid" >
+        <h2>Where there's HEART there's HOPE</h2> 
       <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-2 "></div>
-          <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-            
-              <div class="container-fluid" id="maincontent">
-                  <h2>Where there's HEART there's HOPE</h2>
-                  <br></br>
-                  <div class="row" >
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="1" onclick="block(1)" ></div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="2" onclick="block(2)"></div>
-                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="3" onclick="block(3)"></div>
-                  </div>
-                  <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="4" onclick="block(4)"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="5" onclick="block(5)"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="6" onclick="block(6)"></div>
-                  </div>
-                  <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="7" onclick="block(7)"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="8" onclick="block(8)"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="9" onclick="block(9)"></div>
-                  </div>
-                  <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-8 ">
+             
+              
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12 set2" id="maincontent">
+                <div class="row" >
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="1" onclick="block(1)" ></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="2" onclick="block(2)"></div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="3" onclick="block(3)"></div>
+                    </div>
+                    <div class="row">
+                          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="4" onclick="block(4)"></div>
+                          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="5" onclick="block(5)"></div>
+                          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="6" onclick="block(6)"></div>
+                    </div>
+                    <div class="row">
+                          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="7" onclick="block(7)"></div>
+                          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="8" onclick="block(8)"></div>
+                          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 items" id="9" onclick="block(9)"></div>
+                    </div>
+                  <br><br>  
+                   <div class="row">
                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                           <button class="btn-lg btn-primary" onclick="undo();">undo</button>
 
                       </div>
                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                          <button class="btn-lg btn-0." onclick="resetAll();">reset</button>
+                          <button class="btn-lg btn-success" onclick="resetAll();">reset</button>
                       </div>
                     </div>  
               </div>    
           </div>
           <div class="col-lg-4 col-md-4 col-sm-2" id="music">
-             
+            
           </div>
       </div>
   </div>
