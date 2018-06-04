@@ -59,7 +59,7 @@ h2{
 .set #flow:nth-child(3){
     left:200px;
     top:0;
-    animation: animating 2s linear infinite;
+    animation: flowdown 15s linear infinite;
 }
 .set #flow:nth-child(4){
     left:250px;
@@ -68,11 +68,12 @@ h2{
 }
 .set #flow:nth-child(5){
     left:40px;
-    animation: flowdown 15s linear infinite;
+    top:0px;
+    animation: cracker 2s linear infinite;
 }
 .set #flow:nth-child(6){
     left:10%;
-    animation: cracker 2s linear infinite;
+    animation: animating 15s linear infinite;
 }
 .set #flow:nth-child(7){
     left:0px;
@@ -81,12 +82,12 @@ h2{
 }
 .set #flow:nth-child(8){
     left:100px;
-     
-    animation: animating 15s linear infinite;
+     top:0px;
+    animation: cracker 2s linear infinite;
 }
 .set #flow:nth-child(9){
     left:20%;
-    animation: cracker 2s linear infinite;
+    animation: animating 15s linear infinite;
 }
 .set #flow:nth-child(10){
     right:10%;
@@ -98,8 +99,8 @@ right:00px;
 }
 .set #flow:nth-child(12){
     right:20%;
-
-        animation: animating 15s linear infinite;
+    top: 0px;
+    animation: cracker 2s linear infinite;
     }
     .set #flow:nth-child(13){
         left:70%;
@@ -133,6 +134,12 @@ right:00px;
 @keyframes flowdown {
     0%{
         top:0%;
+    }
+    30%{
+        transform: scale(-1,-1);    
+    }
+    50%{
+        transform: scale3d(2,2);
     }
     100%{
         top:60%;
